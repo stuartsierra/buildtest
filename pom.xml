@@ -19,7 +19,7 @@
   <parent>
     <groupId>org.clojure</groupId>
     <artifactId>pom.contrib</artifactId>
-    <version>0.1.0-SNAPSHOT</version>
+    <version>0.1.0</version>
   </parent>
 
   <scm>
@@ -27,46 +27,4 @@
     <developerConnection>scm:git:git@github.com:stuartsierra/buildtest</developerConnection>
     <url>git@github.com:stuartsierra/buildtest.git</url>
   </scm>
-
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-gpg-plugin</artifactId>
-        <version>1.4</version>
-        <configuration>
-          <keyname>core@clojure.com</keyname>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-deploy-plugin</artifactId>
-        <version>2.7</version>
-        <configuration>
-          <skip>true</skip>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.sonatype.plugins</groupId>
-        <artifactId>nexus-staging-maven-plugin</artifactId>
-        <version>1.4.3</version>
-        <executions>
-          <execution>
-            <id>default-deploy</id>
-            <phase>deploy</phase>
-            <!-- By default, this is the phase deploy goal will bind to -->
-            <goals>
-              <goal>deploy</goal>
-            </goals>
-          </execution>
-        </executions>
-        <configuration>
-          <!-- The Base URL of Nexus instance where we want to stage -->
-          <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-          <!-- The server "id" element from settings to use authentication from -->
-          <serverId>sonatype-oss</serverId>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
 </project>

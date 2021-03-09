@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <artifactId>buildtest</artifactId>
-  <version>0.1.13-SNAPSHOT</version>
+  <version>0.1.13</version>
   <name>buildtest</name>
   <description>Tests for building and releasing open-source Clojure projects</description>
   <url>https://github.com/clojure/build.poms</url>
@@ -26,6 +26,6 @@
     <connection>scm:git:git@github.com:stuartsierra/buildtest</connection>
     <developerConnection>scm:git:git@github.com:stuartsierra/buildtest</developerConnection>
     <url>git@github.com:stuartsierra/buildtest.git</url>
-    <tag>HEAD</tag>
+    <tag>buildtest-0.1.13</tag>
   </scm>
 </project>
